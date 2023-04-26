@@ -1,0 +1,123 @@
+/* Style for the container div */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #fff5ea;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the header */
+h1 {
+    font-size: 4.5rem;
+    margin-bottom: 60px;
+    color: #ff7f50;
+    text-shadow: 2px 2px 2px #ffefd5;
+}
+
+/* Style for the form input */
+input[type="file"] {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: block;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    font-size: 1.2rem;
+    padding: 15px;
+    color: #2c3e50;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+input[type="file"]:focus,
+input[type="file"]:hover {
+    background-color: #d9d9d9;
+}
+
+/* Style for the upload button */
+input[type="submit"] {
+    background-color: #00adb5;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"]:hover {
+    background-color: #007d8c;
+    transform: translateY(-4px);
+}
+
+/* Style for the prediction text */
+h2 {
+    font-size: 3.5rem;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    color: #00adb5;
+    text-shadow: 1px 1px 1px #ffefd5;
+}
+
+/* Style for the image container */
+.image-container {
+    margin-top: 80px;
+    text-align: center;
+    position: relative;
+}
+
+/* Style for the images */
+.image-container img {
+    max-width: 100%;
+    margin-top: 60px;
+    border-radius: 0px;
+    animation-name: zoomIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Background animations */
+body {
+    background: linear-gradient(45deg, #ff7f50, #00adb5, #e6e6e6, #fff5ea, #ff7f50);
+    background-size: 400% 400%;
+    animation-name: gradientAnimation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
